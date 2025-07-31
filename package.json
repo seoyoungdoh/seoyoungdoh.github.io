@@ -2,11 +2,11 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xxxx.github.io",
+  "homepage": "https://seoyoungdoh.github.io",
   "scripts": {
     "build": "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && touch out/.nojekyll",
+
+    "deploy": "next build && touch out/.nojekyll && cd out && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:seoyoungdoh/seoyoungdoh.github.io.git main:gh-pages",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
