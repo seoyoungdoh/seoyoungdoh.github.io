@@ -5,7 +5,6 @@
   "homepage": "https://seoyoungdoh.github.io",
   "scripts": {
     "build": "next build",
-
     "deploy": "next build && touch out/.nojekyll && cd out && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:seoyoungdoh/seoyoungdoh.github.io.git main:gh-pages",
     "dev": "next dev",
     "lint": "next lint",
