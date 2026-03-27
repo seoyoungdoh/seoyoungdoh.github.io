@@ -8,7 +8,7 @@
     "deploy": "next build && touch out/.nojekyll && cd out && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:seoyoungdoh/seoyoungdoh.github.io.git main:gh-pages",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "npx serve@latest out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

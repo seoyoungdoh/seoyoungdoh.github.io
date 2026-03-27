@@ -25,7 +25,12 @@ export default function AcademicWebpage() {
             >
               Email
             </a>
-            <a href="#" className="text-gray-900 hover:text-gray-700 text-base font-medium transition-colors">
+            <a
+              href="/papers/CV_SeoyoungDoh.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-900 hover:text-gray-700 text-base font-medium transition-colors"
+            >
               CV
             </a>
           </div>
@@ -120,11 +125,11 @@ export default function AcademicWebpage() {
                     Jinwook Seo.
                   </p>
                   <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
-                    <span className="bg-gray-100 px-2 py-1 rounded text-xs group-hover:bg-blue-100 transition-colors">
+                    {/* <span className="bg-gray-100 px-2 py-1 rounded text-xs group-hover:bg-blue-100 transition-colors">
                       arXiv preprint
-                    </span>
-                    <span>arXiv:2507.20805</span>
-                    <span>(2025)</span>
+                    </span> */}
+                    <span>VIS 2025 Workshop on Visualization for Communication (VisComm)</span>
+                    {/* <span>(2025)</span> */}
                   </div>
                   <div className="flex items-center space-x-4">
                     <button
@@ -140,6 +145,57 @@ export default function AcademicWebpage() {
                       onClick={(e) => {
                         e.stopPropagation()
                         window.open("/papers/doh25arxiv.pdf", "_blank")
+                      }}
+                      className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-600 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors"
+                    >
+                      <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
+                      </svg>
+                      PDF
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group grid md:grid-cols-3 gap-0 p-0 rounded-lg transition-all duration-300 pub">
+							<div
+								className={"pubImage"}
+								style={{
+									"backgroundImage": "url('/images/jung26arxiv.png')",
+								}}
+							/>
+              <div className="md:col-span-2 flex flex-col justify-center">
+                <div className="flex-1">
+                  <h3 className="font-medium text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                    Seeing Graphs Like Humans: Benchmarking Computational Measures and MLLMs for Similarity Assessment
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Seokweon Jung, Jeongmin Rhee, <strong>Seoyoung Doh</strong>, Hyeon Jeon, Ghulam Jilani Quadri, and Jinwook Seo
+                  </p>
+                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+                    <span>Information Visualization & Visualization Meets AI Workwhop at PacificVis 2026</span>
+                    {/* <span>(2026)</span> */}
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        window.open("https://arxiv.org/abs/2602.22416", "_blank")
+                      }}
+                      className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-blue-600 bg-blue-50 rounded-md hover:bg-blue-100 transition-colors"
+                    >
+                      arXiv
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        window.open("/papers/jung26arxiv.pdf", "_blank")
                       }}
                       className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-600 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors"
                     >
